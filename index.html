@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Font -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
     <!-- Shared Styles -->
     <style>
         .font-manrope {
@@ -38,8 +41,298 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <!-- Nav starts here -->
+        <nav class="container mx-auto max-w-screen-xl font-manrope md:mt-4 mt-2 px-2 md:px-0">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl md:text-4xl font-extrabold text-[#131318]">Hockey<span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li><a class="text-[#424247] hover:text-[#FF4240] duration-300 hover:font-semibold">Home</a>
+                        </li>
+                        <li><a class="text-[#424247] hover:text-[#FF4240] duration-300 hover:font-semibold">About</a>
+                        </li>
+                        <li><a class="text-[#424247] hover:text-[#FF4240] duration-300 hover:font-semibold">Pages</a>
+                        </li>
+                        <li><a class="text-[#424247] hover:text-[#FF4240] duration-300 hover:font-semibold">Blog</a>
+                        </li>
+                        <li><a class="text-[#424247] hover:text-[#FF4240] duration-300 hover:font-semibold">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-5">
+                    <i class="fa-solid fa-magnifying-glass text-[#89898B] hidden lg:flex"></i>
+                    <a class="btn bg-[#FF4240] text-white hover:text-[#FF4240] duration-300 ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav ends here -->
+        <!-- Meet heroes starts here -->
+        <section class="container mx-auto max-w-screen-xl font-manrope md:mt-12 mt-4 md:mb-14 md-4 px-2 md:px-0">
+            <div class="carousel w-full md:h-[550px] h-[200px] rounded-lg">
+                <div id="slide1"
+                    class="carousel-item relative w-full bg-[url(./images/1.png)] bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="absolute flex md:justify-between transform bottom-0 p-2 md:p-7 gap-3 md:gap-5  left-[35%] md:left-1">
+                        <a href="#slide4" class="btn btn-circle bg-[#131318] text-white border-none outline-none">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle  bg-[#131318] text-white border-none outline-noneborder-none outline-none">❯</a>
+                    </div>
+                    <div
+                        class="bg-[#131318] p-3 md:p-6 w-[500px] h-[150px] rounded-lg absolute md:right-5 md:bottom-5 lg:block hidden">
+                        <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                        <p class="text-[#FFFFFF99] opacity-80 pt-4">Step into the exhilarating world of hockey and get
+                            to know the true heroes who dominate the icy battleground.</p>
+                    </div>
+                </div>
+                <div id="slide2"
+                    class="carousel-item relative w-full bg-[url(./images/2.png)] bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="absolute flex md:justify-between transform bottom-0 p-2 md:p-7 gap-3 md:gap-5  left-[35%] md:left-1">
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-white border-none outline-none">❮</a>
+                        <a href="#slide3" class="btn btn-circle  bg-[#131318] text-white border-none outline-none">❯</a>
+                    </div>
+                    <div
+                        class="bg-[#131318] p-3 md:p-6 w-[500px] h-[150px] rounded-lg absolute right-5 bottom-5 lg:block hidden">
+                        <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                        <p class="text-[#FFFFFF99] opacity-80 pt-4 ">Step into the exhilarating world of hockey and get
+                            to know the true heroes who dominate the icy battleground.</p>
+                    </div>
+                </div>
+                <div id="slide3"
+                    class="carousel-item relative w-full bg-[url(./images/3.png)] bg-cover bg-center bg-no-repeat">
+                    <div
+                        class="absolute flex md:justify-between transform bottom-0 p-2 md:p-7 gap-3 md:gap-5  left-[35%] md:left-1">
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-white border-none outline-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle  bg-[#131318] text-white border-none outline-none">❯</a>
+                    </div>
+                    <div
+                        class="bg-[#131318] p-3 md:p-6 w-[500px] h-[150px] rounded-lg absolute right-5 bottom-5 lg:block hidden">
+                        <h3 class="text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                        <p class="text-[#FFFFFF99] opacity-80 pt-4">Step into the exhilarating world of hockey and get
+                            to know the true heroes who dominate the icy battleground.</p>
+                    </div>
+                </div>
+                <div
+                    class="bg-[#131318] p-3 md:p-6 w-[96%]  h-[150px] rounded-lg absolute bottom-[47%] block lg:hidden mt-2">
+                    <h3 class="text-xl font-extrabold text-white">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] opacity-80 pt-4">Step into the exhilarating world of hockey and get to
+                        know the true heroes who dominate the icy battleground.</p>
+                </div>
+
+            </div>
+        </section>
+        <!-- Meet heroes ends here -->
+    </header>
+    <main>
+        <!-- Professional Hockey club starts  -->
+        <section class="container mx-auto max-w-screen-xl font-manrope md:mb-20 mb-5 mt-[45%] md:mt-0">
+            <div class="md:pb-12 pb-6">
+                <h1 class="text-2xl md:text-4xl font-extrabold text-[#131318] text-center">Professional Hockeys Club
+                </h1>
+                <p class="font-medium text-[#13131899] opacity-90 md:p-4 p-2 w-full md:w-2/3 text-center mx-auto">
+                    Welcome to the epicenter of excellence in the world of hockey — our Professional Hockey Club.
+                    Immerse yourself in the unparalleled passion and skill that define our esteemed club. </p>
+            </div>
+            <div class="grid gap-6 md:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mx-auto">
+                        <div class="radial-progress text-[#FF4240] " style="--value:87; " role="progressbar">
+                            <h3 class="text-[#131318] text-xl font-extrabold">87%</h3>
+                        </div>
+                    </div>
+                    <h3 class="text-[#131318] font-semibold text-xl text-center md:py-3 py-2">Prayer Facility</h3>
+                    <p class="text-center text-[#13131899] w-[250px]">We recognize the importance of spiritual
+                        well-being </p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mx-auto">
+                        <div class="radial-progress text-[#49D293] " style="--value:95; " role="progressbar">
+                            <h3 class="text-[#131318] text-xl font-extrabold">95%</h3>
+                        </div>
+                    </div>
+                    <h3 class="text-[#131318] font-semibold text-xl text-center md:py-3 py-2">Experienced Coach</h3>
+                    <p class="text-center text-[#13131899] w-[250px]">At the helm of our hockey journey stands a
+                        guiding/p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mx-auto">
+                        <div class="radial-progress text-[#FFB546] " style="--value:90;" role="progressbar">
+                            <h3 class="text-[#131318] text-xl font-extrabold">90%</h3>
+                        </div>
+                    </div>
+                    <h3 class="text-[#131318] font-semibold text-xl text-center md:py-3 py-2">Senior Player</h3>
+                    <p class="text-center text-[#13131899] w-[250px]">Meet the backbone of our team, the seasoned
+                        warriors</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <div class="mx-auto">
+                        <div class="radial-progress text-[#4C8DF1] " style="--value:80;" role="progressbar">
+                            <h3 class="text-[#131318] text-xl font-extrabold">80%</h3>
+                        </div>
+                    </div>
+                    <h3 class="text-[#131318] font-semibold text-xl text-center md:py-3 py-2">Training Ground</h3>
+                    <p class="text-center text-[#13131899] w-[250px]">Welcome to our state-of-the-art Training Ground,
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-- Professional Hockey club ends  -->
+        <!-- Program section starts here -->
+        <section class="font-manrope container mx-auto max-w-screen-xl px-2 md:px-0">
+            <div class="border-t-2 border-b-2 border-dashed border-[#13131833] py-3 md:py-6">
+                <h1 class="text-2xl md:text-4xl font-extrabold text-center text-[#131318]">Program Sections</h1>
+                <p class="text-[#13131899] font-medium text-center w-full md:w-2/3 mx-auto md:pt-6 pt-3  md:pb-3 pb-2">
+                    Explore
+                    the diverse array of programs that define our commitment to fostering a thriving hockey community.
+                    Each program section is meticulously crafted to cater to the unique needs and aspirations of our
+                    player</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 md:gap-6 gap-3 md:mt-12 mt-6">
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(./Images/2.png)] bg-cover bg-center bg-no-repeat h-[244px] md:h-[350px] rounded-xl hover:scale-105 duration-500">
+                    <div class="max-w-s px-4 pt-12 md:px-10 md:pt-28">
+                        <h1 class="text-white text-[28px] font-extrabold md:py-2 py-1">Junior Program</h1>
+                        <p class="text-white font-medium opacity-90 md:w-[500px] w-full">Designed to nurture budding
+                            athletes, this program serves as the launching pad for future stars of the sport</p>
+                        <a
+                            class="md:mt-4 mt-2 border-none btn bg-[#FF4240] text-white hover:text-[#FF4240] duration-300 ">Register
+                            Now!</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(./Images/3.png)] bg-cover bg-center bg-no-repeat h-[244px] md:h-[350px] rounded-xl hover:scale-105 duration-500">
+                    <div class="max-w-s pt-12 px-4 md:px-10 md:pt-28">
+                        <h1 class="text-white text-[28px] font-extrabold md:py-2 py-1">Junior Program</h1>
+                        <p class="text-white font-medium opacity-90 md:w-[500px] w-full">Designed to nurture budding
+                            athletes, this program serves as the launching pad for future stars of the sport</p>
+                        <a
+                            class="md:mt-4 mt-2 border-none btn bg-[#FF4240] text-white hover:text-[#FF4240] duration-300 ">Register
+                            Now!</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(./Images/4.png)] bg-cover bg-center bg-no-repeat  rounded-xl md:col-span-2 h-[244px] md:h-[450px] hover:scale-105 duration-500">
+                    <div class="max-w-s px-4 md:px-10 pt-12 md:translate-y-[98%]">
+                        <h1 class="text-white text-[28px] font-extrabold md:py-2 py-1">Junior Program</h1>
+                        <p class="text-white font-medium opacity-90 md:w-[500px] w-full">Designed to nurture budding
+                            athletes, this program serves as the launching pad for future stars of the sport</p>
+                        <a
+                            class="md:mt-4 mt-2 border-none btn bg-[#FF4240] text-white hover:text-[#FF4240] duration-300 ">Register
+                            Now!</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Program section ends here-->
+        <!-- Clients question starts here -->
+        <section class="font-manrope mx-auto container max-w-screen-xl md:my-20 my-10 px-2">
+            <div class="border-t-2 border-b-2 border-dashed border-[#13131833] py-3 md:py-6">
+                <h1 class=" text-2xl md:text-4xl font-extrabold text-center text-[#131318]">Clients Question</h1>
+                <p class="text-[#13131899] md:w-2/3 mx-auto text-center font-medium md:pt-5 pt-3">Welcome to our Clients
+                    Questions section, where we understand that clarity is key. Below, you'll find answers to some of
+                    the most common inquiries our clients have. </p>
+            </div>
+            <div class="flex  gap-4 flex-col md:flex-row  justify-between items-center md:pt-12 pt-4">
+                <div class="md:w-1/2">
+                    <img src="./Images/11.png" alt="">
+                </div>
+                <div class="w-full">
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p>Discover the pinnacle of performance with Our Equipment – a testament to precision,
+                                innovation, and unwavering quality. We take pride in offering a meticulously curated
+                                selection of hockey gear that embodies the essence of excellence on the ice. From
+                                cutting-edge sticks engineered for powerful shots to state-of-the-art protective gear
+                                designed for maximum safety, each piece in Our Equ</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p>Dive into the world of precision and skill with our Hockey Training program. Tailored for
+                                players of all levels, our comprehensive training sessions focus on refining techniques,
+                                boosting agility, and enhancing overall game performance.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p>Experience personalized growth with our Private Lessons, where individual attention meets
+                                targeted skill development. Our expert coaches tailor each session to your unique needs,
+                                ensuring a focused and accelerated learning experience.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p>Embark on an adventure like never before with our Ski Touring experience. Traverse
+                                breathtaking landscapes and conquer snowy peaks as you indulge in the thrill of
+                                backcountry skiing. Our guided tours cater to all skill levels, providing an
+                                unforgettable blend of adventure, nature, and adrenaline. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p>Seamlessly plan your next hockey session, private lesson, or ski touring adventure with
+                                our user-friendly Booking system. Our online platform ensures a hassle-free reservation
+                                process, allowing you to secure your spot with ease. Browse available slots, choose your
+                                preferred time, and confirm your booking effortlessly. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl te text-[#131318] font-bold ">Pricing
+                        </div>
+                        <div class="collapse-content">
+                            <p>Transparency meets affordability with our Pricings page, where you'll find a clear
+                                breakdown of costs for our hockey programs, private lessons, and ski touring adventures.
+                                We believe in providing value for your investment, and our pricing structure is designed
+                                to accommodate various budgets without compromising on the quality of our services. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients question ends here -->
+    </main>
     <footer></footer>
 </body>
 
